@@ -1,0 +1,79 @@
+/* Centering and Styling the Scanner Page */
+.scanner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* Heading Style */
+.scanner-container h1 {
+  font-size: 3rem;
+  color: #ffdd57;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  width : 100%
+}
+
+/* Webcam Styling */
+.webcam {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  border: 8px solid #4caf50;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+/* Webcam Hover Effect */
+.webcam:hover {
+  transform: scale(1.05);
+}
+
+/* QR Result Display */
+p {
+  font-size: 1.5rem;
+  color: #fff;
+  background: #4caf50;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+/* Highlight the Result */
+p strong {
+  color: #ffeb3b;
+  font-weight: bold;
+}
+
+/* Add subtle hover effect to the result */
+p:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .scanner-container h1 {
+    font-size: 2rem;
+  }
+
+  .webcam {
+    width: 95%;
+    max-width: 400px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}

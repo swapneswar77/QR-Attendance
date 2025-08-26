@@ -1,0 +1,100 @@
+/* Home.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
+  overflow: hidden;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;       /* Center vertically */
+  height: 90vh;
+  width: 100vw;
+  padding: 20px;
+}
+
+.form-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  padding: 60px;
+  width: 90%;
+  max-width: 650px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+
+.form-card:hover {
+  transform: translateY(-10px);
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #ffeb3b;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  box-shadow: 0 0 15px #ffeb3b;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  background: #4caf50;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+.scan-btn {
+  background: #6200ea;
+  margin-top: 20px;
+}
+
+.qr-container {
+  margin-top: 20px;
+}
+
+.qr-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
